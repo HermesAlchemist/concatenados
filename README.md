@@ -1,1 +1,3 @@
-# concatenados
+# Concatenados
+
+Criação do aplicativo ConcasPay.
