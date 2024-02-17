@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { DefaultComponent } from './pages/default/default.component';
+import { BodyComponent } from './components/pageConfigs/body/body.component';
+import { HeaderComponent } from './components/pageConfigs/header/header.component';
+import { FooterComponent } from './components/pageConfigs/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [
+    RouterOutlet,
+
+    DefaultComponent,
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent,
+
+  ],
 })
 export class AppComponent {
   title = 'concasBank';
