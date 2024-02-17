@@ -1,0 +1,20 @@
+// project colors
+$primary-color: #1a1a1d;
+$secondary-color: #daa520;
+$tertiary-color: #2d2d35;
+$white-color: #fffffa;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
+    --white-color: #{$white-color};
+}
