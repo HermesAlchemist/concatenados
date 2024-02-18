@@ -1,14 +1,11 @@
 <!-- created connection with header -->
 <app-header>
-    <!-- added button to the 'buttons' location -->
-    <section buttons>
-        <button class="btn">Entrar</button>
-    </section>
+    <ng-content buttons select="[buttons]"></ng-content>
 </app-header>
 
 <!-- connection with body component -->
 <app-body>
-
+    <ng-content container select="[container]"></ng-content>
 </app-body>
 
 <!-- connection with footer component -->
