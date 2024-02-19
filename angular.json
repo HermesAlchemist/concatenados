@@ -3,6 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "concasBank": {
       "projectType": "application",
       "schematics": {
@@ -10,6 +11,11 @@
           "style": "scss"
         }
       },
+=======
+    "ConcasPay": {
+      "projectType": "application",
+      "schematics": {},
+>>>>>>> feature/homepage
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,19 +23,27 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/concas-bank",
+=======
+            "outputPath": "dist/concas-pay",
+>>>>>>> feature/homepage
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
             "inlineStyleLanguage": "scss",
+=======
+>>>>>>> feature/homepage
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles/styles.scss"
             ],
             "scripts": [],
@@ -38,6 +52,13 @@
             "ssr": {
               "entry": "server.ts"
             }
+=======
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/styles.css"
+            ],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+>>>>>>> feature/homepage
           },
           "configurations": {
             "production": {
@@ -67,10 +88,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "concasBank:build:production"
             },
             "development": {
               "buildTarget": "concasBank:build:development"
+=======
+              "buildTarget": "ConcasPay:build:production"
+            },
+            "development": {
+              "buildTarget": "ConcasPay:build:development"
+>>>>>>> feature/homepage
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +106,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "buildTarget": "concasBank:build"
+=======
+            "buildTarget": "ConcasPay:build"
+>>>>>>> feature/homepage
           }
         },
         "test": {
@@ -89,18 +121,31 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
+<<<<<<< HEAD
             "inlineStyleLanguage": "scss",
+=======
+>>>>>>> feature/homepage
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles/styles.scss"
+=======
+              "src/styles.css"
+>>>>>>> feature/homepage
             ],
             "scripts": []
           }
         }
       }
     }
+<<<<<<< HEAD
+=======
+  },
+  "cli": {
+    "analytics": false
+>>>>>>> feature/homepage
   }
 }
