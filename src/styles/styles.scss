@@ -58,3 +58,11 @@ $white-color: #fffffa;
         border-color: var(--secondary-color);
     }
 }
+
+.text-primary {
+    color: var(--secondary-color);
+}
+
+.text-secondary {
+    color: var(--white-color);
+}
