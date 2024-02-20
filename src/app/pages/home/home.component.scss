@@ -25,4 +25,39 @@
         margin-top: 1rem;
         align-self: center;
     }
+
+    .btn-mobile {
+        display: none;
+    }
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        .text-container {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-header {
+        display: none;
+    }
+
+    .container {
+        .image-container {
+            display: none;
+        }
+        
+        .btn-mobile {
+            display: block;
+            margin-bottom: .5rem;
+        }
+        
+        .text-container {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+    }
+  }
