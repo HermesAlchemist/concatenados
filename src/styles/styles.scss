@@ -22,18 +22,39 @@ $white-color: #fffffa;
 // --- Botões ---
 
 .btn {
-    width: 200px;
-    height: 51px;
-    padding: 5px 24px; /* Espaçamento interno */
-    font-size: 1.5em; /* Tamanho do texto */
-    font-weight: bold; /* Negrito */
-    color: #daa520;
-    background-color: #000; /* Cor de fundo */
-    border-radius: 10px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de apontar */
-}
+    height: 3rem;
+    padding: 0.3125rem 1.75rem;    
+    font-size: 1.125rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    letter-spacing: 0.0625rem;
+    border: 1px solid transparent;
+    transition: 0.2s;
 
-.btn:hover {
-    background-color: #000; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
+    &:hover {
+        filter: brightness(115%); 
+    }
+
+    &::content {
+        filter: none;
+    }
+
+    &-primary {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        border: var(--secondary-color);
+    }
+
+    &-secondary {
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        border: var(--primary-color);
+    }
+
+    &-outline-primary {
+        color: var(--secondary-color);
+        background-color: transparent;
+        background-image: none;
+        border-color: var(--secondary-color);
+    }
 }
