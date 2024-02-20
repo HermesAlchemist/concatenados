@@ -21,20 +21,3 @@
 .destaquePay {
     color: white;
 }
-
-.btn {
-    width: 200px;
-    height: 51px;
-    padding: 5px 24px; /* Espaçamento interno */
-    font-size: 1.5em; /* Tamanho do texto */
-    font-weight: bold; /* Negrito */
-    color: #daa520;
-    background-color: #000; /* Cor de fundo */
-    border-radius: 10px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de apontar */
-}
-
-.btn:hover {
-    background-color: #000; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
-}
