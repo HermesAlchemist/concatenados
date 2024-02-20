@@ -5,6 +5,7 @@ import { BodyComponent } from './components/pageConfigs/body/body.component';
 import { HeaderComponent } from './components/pageConfigs/header/header.component';
 import { FooterComponent } from './components/pageConfigs/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
     BodyComponent,
     FooterComponent,
     HomeComponent,
+    RecoverPasswordComponent,
 
   ],
 })
