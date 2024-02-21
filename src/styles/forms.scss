@@ -9,7 +9,7 @@
 .form-control {
     width: 29.563rem;
     height: 2.5rem;
-    padding: 0.5rem;
+    padding-left: 2rem;
     border: 1px solid var(--primary-color);
     border-color: var(--secondary-color);
     border-radius: 0.625rem;
@@ -20,14 +20,50 @@
 }
 
 .form-control::placeholder {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--secondary-color);
+    justify-content: center;
 }
-.form-control::placeholder {
-    color: var(--secondary-color);
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.1rem var(--secondary-color, 0.1rem);
 }
+
 
 .custom-control-label {
     color: var(--white-color);
     margin-left: 0.3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.other-data-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 400px){
+    .form-control {
+        width: 100%;
+    }
+    .other-data-form-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 401px) and (max-width: 520px){
+    .form-control {
+        min-width: 100%;
+        max-width: 23rem;
+    }
 }
