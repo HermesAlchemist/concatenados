@@ -5,6 +5,8 @@ import { BodyComponent } from './components/pageConfigs/body/body.component';
 import { HeaderComponent } from './components/pageConfigs/header/header.component';
 import { FooterComponent } from './components/pageConfigs/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
     BodyComponent,
     FooterComponent,
     HomeComponent,
-
+    LoginFormComponent,
+    LoginComponent
   ],
 })
 export class AppComponent {
