@@ -11,6 +11,10 @@ $white-color: #fffffa;
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 
 :root {
     --primary-color: #{$primary-color};
@@ -56,6 +60,10 @@ $white-color: #fffffa;
         background-color: transparent;
         background-image: none;
         border-color: var(--secondary-color);
+    }
+
+    &-large {
+        width: 16.5rem;
     }
 }
 
