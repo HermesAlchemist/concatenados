@@ -6,10 +6,28 @@
     text-decoration: underline;
 }
 
-.other-data-form-group {
+
+.icon {
+    position: absolute;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
 }
+
+.password-field .icon:last-child {
+    display: flex;
+    // margin: calc(27rem - 0.5rem);
+    position: absolute;
+    justify-self: end;
+    align-self: center;
+    right: auto;
+}
+
+// .pass-icons {
+//     display: inline-flex;
+//     justify-content: space-between;
+//     align-items;
+//     position: absolute;
+// }
