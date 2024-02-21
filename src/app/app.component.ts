@@ -5,22 +5,22 @@ import { BodyComponent } from './components/pageConfigs/body/body.component';
 import { HeaderComponent } from './components/pageConfigs/header/header.component';
 import { FooterComponent } from './components/pageConfigs/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CadastroComponent } from "./pages/cadastro/cadastro.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  imports: [
-    RouterOutlet,
-
-    DefaultComponent,
-    HeaderComponent,
-    BodyComponent,
-    FooterComponent,
-    HomeComponent,
-
-  ],
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [
+        RouterOutlet,
+        DefaultComponent,
+        HeaderComponent,
+        BodyComponent,
+        FooterComponent,
+        HomeComponent,
+        CadastroComponent
+    ]
 })
 export class AppComponent {
   title = 'concasBank';
