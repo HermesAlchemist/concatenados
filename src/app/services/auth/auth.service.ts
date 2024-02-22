@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  router = new Router();
   constructor() { }
 
   isAuthenticated(): boolean {
@@ -16,4 +18,15 @@ export class AuthService {
     return false;
   }
 
+  redirectToLogin(): void {
+      this.router.navigateByUrl('/login');
+  }
+
+  redirectToRecoverPassword(): void {
+    this.router.navigateByUrl('/recover-password');
+  }
+
+  redirectToRegister(): void {
+    this.router.navigateByUrl('/register');
+  }
 }

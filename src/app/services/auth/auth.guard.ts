@@ -1,5 +1,5 @@
 import { CanActivateFn, Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from './auth.service';
 
 export const authGuard: CanActivateFn = (route, state) => {
   // create a new router
@@ -12,6 +12,6 @@ export const authGuard: CanActivateFn = (route, state) => {
   }
 
   // redirect and return false by default
-  // router.navigate(['/login']);
-  return true;
+  authService.redirectToLogin();
+  return false;
 };
