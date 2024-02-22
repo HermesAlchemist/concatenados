@@ -4,6 +4,14 @@
     align-items: center;
     align-content: center;
     margin-bottom: 0.6rem;
+
+    .icon {
+        color: var(--secondary-color);
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+    }
 }
 
 .form-control {
