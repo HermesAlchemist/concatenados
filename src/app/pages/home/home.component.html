@@ -1,14 +1,20 @@
 <app-default>
     <!-- added button to be projected -->
-    <section class="content" buttons>
-        <button class="btn btn-secondary btn-header" (click)="redirectToLogin()">ENTRAR</button>
+    <section class="content" buttons>        
+        <button class="btn btn-secondary btn-header" (click)="redirectToLogin()">
+            <fa-icon class="icon" [icon]="rightToBracket" style="color: #daa520;"></fa-icon>
+            <span>ENTRAR</span>
+        </button>
     </section>
 
     <section container class="container">
         <div class="text-container text-secondary">
             <p>Bem-vindo ao nosso novo <span class="text-primary"> banco</span>, onde <span class="text-primary">seu futuro</span> financeiro é <span class="text-primary">nossa prioridade</span>.</p>
             <p>Estamos aqui para <span class="text-primary">oferecer</span> soluções inovadoras e serviços de excelência para <span class="text-primary">atender</span> às suas necessidades.</p>
-            <button class="btn btn-outline-primary btn-mobile btn-large">ENTRAR</button>
+            <button class="btn btn-outline-primary btn-mobile btn-large" (click)="redirectToLogin()">
+                <fa-icon class="icon" [icon]="rightToBracket" style="color: #daa520;"></fa-icon>
+                <span>ENTRAR</span>
+            </button>
             <button class="btn btn-primary btn-large">Abra a sua ConcasPay</button>
         </div>
         <div class="image-container">
