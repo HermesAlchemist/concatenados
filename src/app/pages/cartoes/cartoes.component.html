@@ -1,26 +1,30 @@
 <app-header>
+  <section welcome>
+    <div class="welcome-perfil">
+      <div>
+        <img class="img-perfil" src="../../../assets/perfil.png" alt="Imagem de boas-vindas">
+      </div>
+      <div>
+        <h2 class="welcome-paragraph">{{ saudacao }}</h2>
+      </div>
+    </div>
+  </section>
 </app-header>
 
 <app-body>
   <section container>
-    <div class="welcome-perfil">
-    <div>
-      <img class="img-perfil" src="../../../assets/perfil.png" alt="Imagem de boas-vindas">
-    </div>
     <div class="welcomePhraseContainer">
       <div>
-        <img class="img-cartao" src="../../../assets/Cartão.jpg" alt="Imagem do cartão">
+        <img class="img-cartao" src="../../../assets/virtualCardConcas.png" alt="Imagem do cartão">
       </div>
       <div>
         <button type="submit">Bloquear Cartão</button>
       </div>
-      <h2 class="welcome-paragraph">{{ saudacao }}</h2>
       <h2 class="welcome-paragraph">Limite: {{ limite }}</h2>
       <p class="welcome-name">Número do Cartão: {{ numero }}</p>
         <p class="welcome-name">Nome: {{ nomeCartao }}</p>
         <p class="welcome-name">Validade: {{ validade }}</p>
         <p class="welcome-name">CVC: {{ cvc }}</p>
-      </div>
     </div>
   </section>
 </app-body>
