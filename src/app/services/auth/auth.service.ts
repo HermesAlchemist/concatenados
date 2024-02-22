@@ -21,4 +21,12 @@ export class AuthService {
   redirectToLogin(): void {
       this.router.navigateByUrl('/login');
   }
+
+  redirectToRecoverPassword(): void {
+    this.router.navigateByUrl('/recover-password');
+  }
+
+  redirectToRegister(): void {
+    this.router.navigateByUrl('/register');
+  }
 }

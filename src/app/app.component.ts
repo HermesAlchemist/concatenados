@@ -23,7 +23,7 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
     FooterComponent,
     HomeComponent,
     LoginFormComponent,
-    LoginComponent
+    LoginComponent,
     RecoverPasswordComponent,
   ],
 })
