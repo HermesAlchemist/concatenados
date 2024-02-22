@@ -3,6 +3,9 @@ import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../components/pageConfigs/header/header.component';
 import { BodyComponent } from '../../components/pageConfigs/body/body.component';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-recover-password',
@@ -15,12 +18,17 @@ import { BodyComponent } from '../../components/pageConfigs/body/body.component'
 
     HeaderComponent,
     BodyComponent,
+
+    FontAwesomeModule,
   ],
 })
 export class RecoverPasswordComponent {
+  envelope = faEnvelope;
   emailSent = false;
   message = '';
   emailValue: string = '';
+
+  constructor(private location: Location) { }
 
   onSubmit() {
     const email = this.emailValue;
@@ -42,5 +50,10 @@ export class RecoverPasswordComponent {
         }
       }, 1000);
     })
+  }
+
+  backBtn() {
+    // return to the last page
+    this.location.back();
   }
 }
