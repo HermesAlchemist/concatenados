@@ -3,6 +3,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AuthService } from '../../../services/auth/auth.service';
 
 @Component({
   selector: 'app-login-form',
@@ -15,6 +16,8 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   ],
 })
 export class LoginFormComponent implements AfterViewInit {
+  constructor(private authService: AuthService) { }
+
   envelope = faEnvelope;
   lock = faLock;
   eye = faEye;
@@ -30,6 +33,10 @@ export class LoginFormComponent implements AfterViewInit {
       // focus on the 'email' input field
       document.getElementById('email')!.focus();
     }
+  }
+  
+  redirectRecoverPassword() {
+    this.authService.redirectToRecoverPassword();
   }
   
 }
