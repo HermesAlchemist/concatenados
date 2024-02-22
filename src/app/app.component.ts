@@ -8,7 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CartoesComponent } from './pages/cartoes/cartoes.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +26,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LoginFormComponent,
     LoginComponent,
     RecoverPasswordComponent,
-    FontAwesomeModule
+    CartoesComponent
   ],
 })
 export class AppComponent {
