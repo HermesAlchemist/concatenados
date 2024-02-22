@@ -39,4 +39,8 @@ export class LoginFormComponent implements AfterViewInit {
     this.authService.redirectToRecoverPassword();
   }
   
+  onSubmit() {
+    console.log('Logging in...');
+    console.log(this.form.valid);
+  }
 }
