@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
+import { CartoesComponent } from './pages/cartoes/cartoes.component';
 
 @Component({
   selector: 'app-root',
@@ -23,8 +24,9 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
     FooterComponent,
     HomeComponent,
     LoginFormComponent,
-    LoginComponent
+    LoginComponent,
     RecoverPasswordComponent,
+    CartoesComponent
   ],
 })
 export class AppComponent {
