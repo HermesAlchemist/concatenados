@@ -1,37 +1,46 @@
 <app-header></app-header>
 <main>
-
-        <h2>Abra sua conta <span class="trocacorh2">Concas</span>Pay</h2>
+    <h2>Abra sua conta <span class="text-primary">Concas</span>Pay</h2>
+    
     <div class="container">
     <form>
-      <div>
+      <div class="form-group">
+        <fa-icon class="icon" [icon]="envelope" style="color: #daa520;"></fa-icon>
+        <input formControlName="email" type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+      </div>
+      <div class="form-group">
         <label for="nome"></label>
-        <input class="input-style" type="text" id="nome" name="nome" placeholder="Informe o Nome Completo" required />
+        <fa-icon class="icon" [icon]="user" style="color: #daa520;"></fa-icon>
+        <input class="form-control" type="text" id="nome" name="nome" placeholder="Informe o Nome Completo" required />
       </div>
     
-      <div>
+      <div class="form-group">
         <label for="cpf"></label>
-        <input class="input-style" type="text" id="cpf" name="cpf" placeholder="Informe o CPF" required />
+        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="Informe o CPF" required />
+        <fa-icon class="icon" [icon]="adressCard" style="color: #daa520;"></fa-icon>
       </div>
       
-      <div>
+      <div class="form-group">
         <label for="email"></label>
-        <input class="input-style" type="email" id="email" name="email" placeholder="Informe o E-mail" required />
+        <input class="form-control form-control" type="email" id="email" name="email" placeholder="Informe o E-mail" required />
+        <fa-icon class="icon" [icon]="envelope" style="color: #daa520;"></fa-icon>
       </div>
     
       
-      <div>
+      <div class="form-group">
         <label for="telefone"></label>
-        <input class="input-style" type="tel" id="telefone" name="telefone" placeholder="Informe seu Número Celular (com DDD)" required />
+        <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="Informe seu Número Celular (com DDD)" required />
+        <fa-icon class="icon" [icon]="phone" style="color: #daa520;"></fa-icon>
       </div>
     
-      <div>
+      <div class="form-group">
         <label for="dataNascimento"></label>
-        <input class="input-style" type="date" id="dataNascimento" name="dataNascimento" placeholder="Informe a Data de Nascimento" required />
+        <input class="form-control" type="date" id="dataNascimento" name="dataNascimento" placeholder="Informe a Data de Nascimento" required />
+        <fa-icon class="icon" [icon]="calendar" style="color: #daa520;"></fa-icon>
       </div>
     
       <button class="btn" type="submit">Registrar</button>
-      <p>Ao clicar em <span>Enviar</span> você aceita os <span class="trocacorP"><u>Termos de Uso</u></span> e declara que leu e está ciente da <span class="trocacorP"><u>Política de Privacidade.</u></span></p>
+      <p class="text-secondary">Ao clicar em <span>Enviar</span> você aceita os <span class="text-primary"><u>Termos de Uso</u></span> e declara que leu e está ciente da <span class="text-primary"><u>Política de Privacidade.</u></span></p>
     </form>
 </div>
 </main>
