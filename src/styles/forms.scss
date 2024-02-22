@@ -21,8 +21,9 @@
 
 .form-control::placeholder {
     font-size: 0.85rem;
-    color: var(--secondary-color);
+    color: var(--white-color);
     justify-content: center;
+    opacity: 60%;
 }
 
 .form-control:focus {
