@@ -32,24 +32,18 @@ export class RecoverPasswordComponent {
 
   onSubmit() {
     const email = this.emailValue;
-    this.sendEmail(email).then(() => {
+    console.log('Sending email to ' + email);
+    if (this.isValidEmail(email)) {
       this.emailSent = true;
       this.message = 'Email sent successfully, please check your inbox for further instructions.';
-    }).catch((error: { message: string; }) => {
-      this.message = 'Failed to send email: ' + error.message;
-    });
+    } else {
+      this.message = 'Invalid email address. Please enter a valid email address.';
+    }
   }
-
-  private sendEmail(email: string): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      setTimeout(() => {
-        if (email.endsWith('@example.com')) {
-        resolve();
-        } else {
-          reject(new Error('Invalid email address. Please use an email address ending with @example.com'));
-        }
-      }, 1000);
-    })
+  
+  isValidEmail(email: string): boolean {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
   }
 
   backBtn() {
