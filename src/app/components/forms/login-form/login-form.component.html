@@ -1,4 +1,7 @@
 <form class="form" [formGroup]="form">
+    <span *ngIf="isFormValid != null && !isFormValid" class="invalid-login">
+        Email e/ou senha incorretos
+    </span>
     <div class="form-group">
         <fa-icon class="icon" [icon]="envelope" style="color: #daa520;"></fa-icon>
         <input formControlName="email" type="email" class="form-control" id="email" placeholder="Digite seu email" required>
@@ -10,7 +13,7 @@
     <div class="other-data-form-group">
         <div class="checkbox-container">
             <!-- checkbox -->
-            <input type="checkbox" class="checkbox" id="rememberMe">
+            <input formControlName="rememberMe" type="checkbox" class="checkbox" id="rememberMe">
             <label class="label" for="rememberMe">Lembrar-me</label>
         </div>
         <!-- link -->

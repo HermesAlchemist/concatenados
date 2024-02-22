@@ -18,6 +18,20 @@ export class AuthService {
     return false;
   }
 
+  login(credentials: {email: string, password: string, rememberMe: boolean}): boolean {
+    // for now, just log the credentials
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('email', credentials.email);
+      return true;
+    }
+    // return false if window is undefined
+    return false;
+  }
+
+  redirectToHome(): void {
+    this.router.navigateByUrl('/');
+  }
+
   redirectToLogin(): void {
       this.router.navigateByUrl('/login');
   }

@@ -23,4 +23,9 @@ export class HomeComponent {
   redirectToLogin(){
     this.authService.redirectToLogin();
   }
+
+  redirectToRegister(){
+    this.authService.redirectToRegister();
+  }
+
 }
