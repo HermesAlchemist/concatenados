@@ -1,15 +1,19 @@
 import { Component, Input } from '@angular/core';
 import { HeaderComponent } from '../../components/pageConfigs/header/header.component';
 import { BodyComponent } from '../../components/pageConfigs/body/body.component';
+import { faHand } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-cartoes',
   standalone: true,
-  imports: [HeaderComponent, BodyComponent],
+  imports: [HeaderComponent, BodyComponent, FontAwesomeModule],
   templateUrl: './cartoes.component.html',
   styleUrl: './cartoes.component.scss'
 })
 export class CartoesComponent {
+  hand = faHand;
+
   nome: string = 'Adriana';
   limite: string = 'R$ 1.000,00';
   numero: string = '1234 5678 9012 3456';
