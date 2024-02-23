@@ -13,7 +13,7 @@ export class AuthService {
     // needed to check if window is not undefined because the angular
     // app is running in server side first
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('token') ? true : false;
+      return localStorage.getItem('email') ? true : false;
     }
     return false;
   }
@@ -29,7 +29,11 @@ export class AuthService {
   }
 
   redirectToHome(): void {
+    if (this.isAuthenticated()) {
+      this.router.navigateByUrl('/home');
+    } else {
     this.router.navigateByUrl('/');
+    }
   }
 
   redirectToLogin(): void {
