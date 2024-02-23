@@ -1,0 +1,9 @@
+<div class="container">
+    @for (statement of transactions.slice(0, bankStatementsLimit || transactions.length); track statement.date) {
+        <section class="row">
+            <p class="col">{{ statement.date || 'dd/MM/yyyy' }}</p>
+            <p class="col">{{ statement.description }}</p>
+            <p class="col">{{ statement.value || 'BRL' }}</p>
+        </section>
+    }
+</div>
