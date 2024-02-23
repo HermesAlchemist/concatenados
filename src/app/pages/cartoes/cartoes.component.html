@@ -1,0 +1,56 @@
+<app-header>
+  <section welcome>
+    <div class="welcome-perfil">
+      <div>
+        <img class="img-perfil" src="../../../assets/foto-cartao.png" alt="Imagem de boas-vindas">
+      </div>
+      <div>
+        <h2 class="welcome-paragraph">{{ saudacao }}</h2>
+      </div>
+    </div>
+  </section>
+</app-header>
+
+<app-body>
+  <section id="section" container>
+    <div class="app">
+      <div class="data">
+        <div class="wrapper">
+          <p class="limit">Limite</p>
+          <span>{{ limite }}</span>
+        </div>
+
+        <div class="wrapper">
+          <p>Número do Cartão</p>
+          <span id="card-number">{{ numero }}</span>
+        </div>
+
+        <div class="wrapper">
+          <p>Nome</p>
+          <span id="card-holder">{{ nomeCartao }}</span>
+        </div>
+        <div class="flex">
+          <div class="wrapper">
+            <p>Validade</p>
+            <span id="expiration-date">{{ validade }}</span>
+          </div>
+
+          <div class="wrapper">
+            <p>CVC</p>
+            <span id="security-code">{{ cvc }}</span>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <div>
+          <img class="img-cartao" src="../../../assets/concaspay2.png" alt="Imagem do cartão">
+        </div>
+        <div>
+          <button type="submit">Bloquear Cartão</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</app-body>
+

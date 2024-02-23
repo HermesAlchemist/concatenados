@@ -1,0 +1,26 @@
+.password-field .icon:last-child {
+    display: flex;
+    // margin: calc(27rem - 0.5rem);
+    position: absolute;
+    justify-self: end;
+    align-self: center;
+    right: auto;
+}
+
+.forgot-password {
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: right;
+    transition: ease-in 0.2s;
+}
+.forgot-password:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transform: scale(1.007);
+}
+
+.invalid-login {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 0.2rem;
+}

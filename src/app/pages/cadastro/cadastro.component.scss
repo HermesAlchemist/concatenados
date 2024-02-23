@@ -21,9 +21,6 @@ main {
 .container {
     max-width: 400px;
     padding: 20px;
-    
-        
-    
 }
 
 label{
@@ -32,10 +29,7 @@ label{
     font-weight: bold;
     align-items: center;
     justify-content: center;
-    
-    
 }
-
 
 .input-style {
   width: 334px;
@@ -47,13 +41,11 @@ label{
   border-color: var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--white-color);
- 
-  
 }
+
 ::placeholder {
     color: var(--white-color);
 }
-
 
 p {
     color: var(--white-color);
@@ -62,8 +54,6 @@ p {
     margin-top: 20px;
     width: 334px;
     height: 63px;
-    
-
 }
 
 .trocacorP {
@@ -79,6 +69,3 @@ p {
     box-sizing: border-box;
     font-size: 18px;
 }
-
-
-

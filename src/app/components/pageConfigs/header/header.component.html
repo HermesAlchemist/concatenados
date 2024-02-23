@@ -1,7 +1,6 @@
 <header class="header">
-    <section class="logo">
+    <section class="logo" (click)="redirectToHome()">
       <div class="logo-text">Concas<span class="destaquePay">Pay</span></div>
     </section>
-    <ng-content class="btn" select="[buttons]"></ng-content>
-    <!-- <button class="btn">Entrar</button> -->
+    <ng-content class="btn" select="[buttons], [welcome]"></ng-content>
 </header>

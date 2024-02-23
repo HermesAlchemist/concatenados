@@ -1,0 +1,27 @@
+.main {
+    height: 90vh;
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-section {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 3.5em; /* Tamanho do texto */
+    margin: 0;
+    font-weight: bold; /* Negrito */
+    color: var(--white-color);
+}
+.destaquePay {
+    color: var(--secondary-color);
+}

@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/forms.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -95,7 +96,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/forms.scss"
             ],
             "scripts": []
           }
@@ -104,6 +106,7 @@
     }
   },
   "cli": {
-    "analytics": "9cdd9a17-3a20-469f-89dd-91e7283ee6e9"
+    "analytics": "966833e4-9b7d-442d-92df-2c99d4de2cac"
+
   }
 }
