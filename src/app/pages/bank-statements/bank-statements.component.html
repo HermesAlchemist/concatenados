@@ -3,21 +3,21 @@
 </app-header>
 <app-body class="main">
   <section container>
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center text-primary">
       <div>
         <table class="table movimentacoes-list">
-          <thead>
+          <thead class="cabecalho">
             <tr>
               <th class="px-4"></th>
               <th class="px-4" class="aumentar-fonte">Movimentações</th>
-              <th class="px-4">Últimos 15 dias</th>
+              <th class="px-4 diminuir-fonte">Últimos 15 dias</th>
             </tr>
           </thead>
-          <tbody>
-            <tr *ngFor="let movimentacao of movimentacoes">
-              <td class="px-4">{{ movimentacao.data}}</td>
-              <td class="px-4"><b>{{ movimentacao.descricao }}</b> <br> {{movimentacao.tipo}} </td>
-              <td class="px-4"> R$ {{ movimentacao.valor }}</td>
+          <tbody class="corpo">
+            <tr class="linha" *ngFor="let movimentacao of movimentacoes">
+              <td class="px-4 data">{{ movimentacao.data}}</td>
+              <td class="px-4 movimentacao"><b>{{ movimentacao.descricao }}</b> <br> {{movimentacao.tipo}} </td>
+              <td class="px-4 valor"> R$ {{ movimentacao.valor }}</td>
             </tr>
           </tbody>
         </table>
