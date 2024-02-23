@@ -6,12 +6,14 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { CartoesComponent } from './pages/cartoes/cartoes.component';
 import { LoggedHomeComponent } from './pages/logged-home/logged-home.component';
+import { BankStatementsComponent } from './pages/bank-statements/bank-statements.component';
 
 export const routes: Routes = [
     {path: "", component: HomeComponent,},
     {path: "login", component: LoginComponent},
     {path: "recover-password", component: RecoverPasswordComponent,},
     {path: "register", component: CadastroComponent},
-    {path: "cartoes", component: CartoesComponent, canActivate: [authGuard],},
+    {path: "cards", component: CartoesComponent, canActivate: [authGuard],},
     {path: "home", component: LoggedHomeComponent, canActivate: [authGuard],},
+    {path: "statements", component: BankStatementsComponent, canActivate: [authGuard],},
 ];
