@@ -1,0 +1,27 @@
+<app-header>
+
+</app-header>
+<app-body class="main">
+  <section container>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div>
+        <table class="table movimentacoes-list">
+          <thead>
+            <tr>
+              <th class="px-4"></th>
+              <th class="px-4" class="aumentar-fonte">Movimentações</th>
+              <th class="px-4">Últimos 15 dias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movimentacao of movimentacoes">
+              <td class="px-4">{{ movimentacao.data}}</td>
+              <td class="px-4"><b>{{ movimentacao.descricao }}</b> <br> {{movimentacao.tipo}} </td>
+              <td class="px-4"> R$ {{ movimentacao.valor }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</app-body>

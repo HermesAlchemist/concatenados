@@ -5,10 +5,12 @@ import { BodyComponent } from './components/pageConfigs/body/body.component';
 import { HeaderComponent } from './components/pageConfigs/header/header.component';
 import { FooterComponent } from './components/pageConfigs/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CadastroComponent } from "./pages/cadastro/cadastro.component";
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { CartoesComponent } from './pages/cartoes/cartoes.component';
+import { BankStatementsListComponent } from './components/listComponents/bank-statements-list/bank-statements-list.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,9 @@ import { CartoesComponent } from './pages/cartoes/cartoes.component';
     LoginFormComponent,
     LoginComponent,
     RecoverPasswordComponent,
-    CartoesComponent
+    CartoesComponent,
+    BankStatementsListComponent,
+    CadastroComponent,
   ],
 })
 export class AppComponent {

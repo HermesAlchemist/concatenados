@@ -1,0 +1,18 @@
+.main {
+  height: 90vh;
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movimentacoes-list tr {
+  border-bottom: 1px solid black;
+}
+
+.aumentar-fonte {
+  font-size: 2em;
+}
+
+

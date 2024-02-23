@@ -12,7 +12,6 @@ import { BodyComponent } from "../../components/pageConfigs/body/body.component"
     imports: [HeaderComponent, BodyComponent, FontAwesomeModule]
 })
 export class CadastroComponent {
-
     user = faUser;
     adressCard = faAddressCard;
     envelope = faEnvelope;
