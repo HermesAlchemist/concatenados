@@ -4,13 +4,21 @@
     align-items: center;
     align-content: center;
     margin-bottom: 0.6rem;
+
+    .icon {
+        color: var(--secondary-color);
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+    }
 }
 
 .form-control {
     width: 29.563rem;
-    height: 2.5rem;
+    height: 3rem;
     padding-left: 2rem;
-    border: 1px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     border-color: var(--secondary-color);
     border-radius: 0.625rem;
     font-size: 1rem;
