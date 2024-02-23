@@ -7,12 +7,39 @@
   align-items: center;
 }
 
+section {
+  margin-top: 2rem;
+  height: 100%;
+  width: 400px;
+}
+
+.cabecalho {
+  margin-bottom: 1rem;
+}
+
+
+
+.movimentacoes-list {
+  width: 100%;
+}
+
 .movimentacoes-list tr {
   border-bottom: 1px solid black;
+  width: 100%;
 }
 
 .aumentar-fonte {
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
+.diminuir-fonte {
+  font-size: .75rem;
+}
 
+.linha {
+  margin-bottom: 2rem;
+}
+
+.movimentacao {
+  font-weight: 300;
+}
