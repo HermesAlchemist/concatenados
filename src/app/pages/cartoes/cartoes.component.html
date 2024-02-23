@@ -34,20 +34,20 @@
             <p>Validade</p>
             <span id="expiration-date">{{ validade }}</span>
           </div>
-
           <div class="wrapper">
             <p>CVC</p>
             <span id="security-code">{{ cvc }}</span>
           </div>
         </div>
-
       </div>
-      <div>
+
+      <div class="cartao">
         <div>
           <img class="img-cartao" src="../../../assets/concaspay2.png" alt="Imagem do cartão">
         </div>
-        <div>
-          <button type="submit">Bloquear Cartão</button>
+        <div class="form-group btn-large">
+          <fa-icon class="icon" [icon]="hand"></fa-icon>
+          <button class="btn btn-outline-primary form-control" style="color: #daa520;" type="submit">Bloquear Cartão</button>
         </div>
       </div>
     </div>

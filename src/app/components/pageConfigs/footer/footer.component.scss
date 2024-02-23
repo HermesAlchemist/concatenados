@@ -6,9 +6,12 @@ $footer-text-small-size: .75rem;
 $footer-text-weight: 300;
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   background-color: $footer-bg-color;
   height: $footer-height;
-  bottom: 0;
   padding: $footer-padding;
 
   @media screen and (max-width: 768px) {
