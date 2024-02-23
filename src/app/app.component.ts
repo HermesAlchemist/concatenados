@@ -10,6 +10,7 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
 import { LoginComponent } from './pages/login/login.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { CartoesComponent } from './pages/cartoes/cartoes.component';
+import { BankStatementsListComponent } from './components/listComponents/bank-statements-list/bank-statements-list.component';
 
 @Component({
   selector: 'app-root',
@@ -27,8 +28,9 @@ import { CartoesComponent } from './pages/cartoes/cartoes.component';
     LoginFormComponent,
     LoginComponent,
     RecoverPasswordComponent,
-    CartoesComponent
-    CadastroComponent
+    CartoesComponent,
+    BankStatementsListComponent,
+    CadastroComponent,
   ],
 })
 export class AppComponent {

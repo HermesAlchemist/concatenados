@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BodyComponent } from '../../components/pageConfigs/body/body.component';
+import { HeaderComponent } from '../../components/pageConfigs/header/header.component';
 
 @Component({
   selector: 'app-bank-statements',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './bank-statements.component.html',
-  styleUrl: './bank-statements.component.scss'
+  styleUrl: './bank-statements.component.scss',
+  imports: [
+    CommonModule,
+
+    HeaderComponent,
+    BodyComponent,
+  ],
 })
 export class BankStatementsComponent {
   movimentacoes = [
