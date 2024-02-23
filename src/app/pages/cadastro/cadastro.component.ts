@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faUser, faAddressCard, faCalendarDays, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faAddressCard, faLock, faCalendarDays, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { HeaderComponent } from "../../components/pageConfigs/header/header.component";
 import { BodyComponent } from "../../components/pageConfigs/body/body.component";
 
@@ -18,4 +18,5 @@ export class CadastroComponent {
     envelope = faEnvelope;
     phone = faPhone;
     calendar = faCalendarDays;
+    lock = faLock;
 }
