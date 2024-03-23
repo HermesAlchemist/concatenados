@@ -34,4 +34,8 @@ export class CartoesComponent {
     }
     this.saudacao += ', ' + this.nome + '!';
   }
+
+  logout() {
+  
+  }
 }

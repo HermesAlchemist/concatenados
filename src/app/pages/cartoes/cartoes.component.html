@@ -1,8 +1,11 @@
 <app-header>
   <section welcome>
-    <div class="welcome-perfil">
+    <div class="dropdown welcome-perfil">
       <div>
-        <img class="img-perfil" src="../../../assets/foto-cartao.png" alt="Imagem de boas-vindas">
+        <img class="img-perfil dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="../../../assets/foto-cartao.png" alt="Imagem de boas-vindas">
+      </div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" (click)="logout()">Logout</a>
       </div>
       <div>
         <h2 class="welcome-paragraph">{{ saudacao }}</h2>
