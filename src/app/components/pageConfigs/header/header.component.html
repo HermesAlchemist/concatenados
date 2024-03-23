@@ -1,6 +1,6 @@
-<header class="header">
-    <section class="logo" (click)="redirectToHome()">
-      <div class="logo-text">Concas<span class="destaquePay">Pay</span></div>
-    </section>
-    <ng-content class="btn" select="[buttons], [welcome]"></ng-content>
+<header class="d-flex p-3 justify-content-between bg-primary">
+  <section class="d-flex mx-auto ms-lg-1" (click)="redirectToHome()">
+    <p class="text-dark text-center text-lg-left fs-2 fw-bolder mb-0">Concas<span class="text-light">Pay</span></p>
+  </section>
+  <ng-content class="btn" select="[buttons], [welcome]"></ng-content>
 </header>

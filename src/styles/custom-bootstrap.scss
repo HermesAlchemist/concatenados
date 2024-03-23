@@ -1,0 +1,115 @@
+$font-family-sans-serif: "Poppins",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Defina suas cores personalizadas
+$custom-dark-bg: #1a1a1d;
+$custom-gold: #daa520;
+$custom-shadow: #2d2d35;
+$custom-text-primary: #daa520;
+$custom-text-secondary: #fffffa;
+
+// Sobrescreva as variáveis de cores do Bootstrap com suas cores personalizadas
+$primary: $custom-gold;
+$secondary: $custom-dark-bg;
+$success: #28a745; // ou outra cor de sua preferência
+$info: #17a2b8; // ou outra cor de sua preferência
+$warning: #ffc107; // ou outra cor de sua preferência
+$danger: #dc3545; // ou outra cor de sua preferência
+$light: #f8f9fa; // ou outra cor de sua preferência
+$dark: $custom-dark-bg;
+
+// Sobrescreva outras variáveis de cores do Bootstrap conforme necessário
+$link-color: $custom-gold;
+$link-hover-color: darken($link-color, 15%);
+$gray-100: #f8f9fa; // ou outra cor de sua preferência
+$gray-200: #e9ecef; // ou outra cor de sua preferência
+$gray-300: #dee2e6; // ou outra cor de sua preferência
+$gray-400: #ced4da; // ou outra cor de sua preferência
+$gray-500: #adb5bd; // ou outra cor de sua preferência
+$gray-600: #6c757d; // ou outra cor de sua preferência
+$gray-700: #495057; // ou outra cor de sua preferência
+$gray-800: #343a40; // ou outra cor de sua preferência
+$gray-900: #212529; // ou outra cor de sua preferência
+
+// Defina as cores de fundo e texto do corpo
+$body-bg: $custom-dark-bg;
+$body-color: $custom-text-primary;
+
+// Defina a cor do texto dos botões no tema dark
+$btn-dark-color: $custom-gold;
+
+// Defina as cores dos botões
+$btn-primary-bg: $custom-gold;
+$btn-primary-color: $custom-dark-bg;
+$btn-secondary-bg: $custom-dark-bg;
+$btn-secondary-color: $custom-gold;
+
+// Defina cores de sombra ou destaque conforme necessário
+$box-shadow-base: 0 0.5rem 1rem rgba(45, 45, 53, 0.15); // ou outra cor de sua preferência
+
+// Defina cores de texto secundário
+$text-muted: $custom-text-secondary;
+
+// Defina cores de validação de formulário
+$valid-feedback-color: $success;
+$invalid-feedback-color: $danger;
+
+// Tables
+$table-cell-padding-y:        .5rem;
+$table-cell-padding-x:        .5rem;
+$table-cell-padding-y-sm:     .25rem;
+$table-cell-padding-x-sm:     .25rem;
+
+$table-cell-vertical-align:   top;
+
+$table-color:                 #000 !important;
+$table-bg:                    $body-color !important;
+$table-accent-bg:             transparent;
+
+$table-th-font-weight:        null;
+
+$table-striped-color:         $table-color;
+$table-striped-bg-factor:     .05;
+// $table-striped-bg:            rgba($black, $table-striped-bg-factor);
+
+$table-active-color:          $table-color;
+$table-active-bg-factor:      .1;
+// $table-active-bg:             rgba($black, $table-active-bg-factor);
+
+$table-hover-color:           $table-color;
+$table-hover-bg-factor:       .075;
+// $table-hover-bg:              rgba($black, $table-hover-bg-factor);
+
+$table-border-factor:         .1;
+$table-border-width:          1rem;
+// $table-border-width:          $border-width;
+// $table-border-color:          $border-color;
+
+$table-striped-order:         odd;
+
+$table-group-separator-color: currentColor;
+
+// $table-caption-color:         $text-muted;
+
+$table-caption-color:         #000 !important;
+
+$table-bg-scale:              -80%;
+
+// Inputs
+$input-border-color: $custom-gold !important;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true
+        )
+      )
+  )
+);

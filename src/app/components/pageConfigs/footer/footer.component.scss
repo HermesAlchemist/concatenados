@@ -1,45 +1,45 @@
-$footer-bg-color: var(--tertiary-color);
-$footer-height: 10vh;
-$footer-padding: .5rem 3rem;
-$footer-text-size: 1rem;
-$footer-text-small-size: .75rem;
-$footer-text-weight: 300;
+// $footer-bg-color: var(--tertiary-color);
+// $footer-height: 10vh;
+// $footer-padding: .5rem 3rem;
+// $footer-text-size: 1rem;
+// $footer-text-small-size: .75rem;
+// $footer-text-weight: 300;
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+// footer {
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
 
-  background-color: $footer-bg-color;
-  height: $footer-height;
-  padding: $footer-padding;
+//   background-color: $footer-bg-color;
+//   height: $footer-height;
+//   padding: $footer-padding;
 
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
+//   @media screen and (max-width: 768px) {
+//     text-align: center;
+//   }
+// }
 
-.footer-left {
-  display: flex;
-  height: 100%;
+// .footer-left {
+//   display: flex;
+//   height: 100%;
 
-  @media screen and (max-width: 768px) {
-    justify-content: center;
-  }
-}
+//   @media screen and (max-width: 768px) {
+//     justify-content: center;
+//   }
+// }
 
-.footer-image {
-  height: 100%;
-  width: auto;
-  margin-right: .5rem;
-}
+// .footer-image {
+//   height: 100%;
+//   width: auto;
+//   margin-right: .5rem;
+// }
 
-.footer-text {
-  font-size: $footer-text-size;
-  align-self: center;
+// .footer-text {
+//   font-size: $footer-text-size;
+//   align-self: center;
 
-  span {
-    font-size: $footer-text-small-size;
-    font-weight: $footer-text-weight;
-  }
-}
+//   span {
+//     font-size: $footer-text-small-size;
+//     font-weight: $footer-text-weight;
+//   }
+// }
