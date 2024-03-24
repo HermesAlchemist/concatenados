@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.cursor-img-logout {
+  cursor: pointer;
+}
+
 .data {
   text-align: left;
   width: 50%;
@@ -22,7 +26,6 @@
   font-size: 1.6rem;
   display: flex;
   place-items: center;
-  min-height: 100vh;
 }
 
 .app {

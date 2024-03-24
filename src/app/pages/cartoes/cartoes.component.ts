@@ -3,11 +3,13 @@ import { HeaderComponent } from '../../components/pageConfigs/header/header.comp
 import { BodyComponent } from '../../components/pageConfigs/body/body.component';
 import { faHand } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-cartoes',
   standalone: true,
-  imports: [HeaderComponent, BodyComponent, FontAwesomeModule],
+  imports: [HeaderComponent, BodyComponent, FontAwesomeModule, CommonModule],
   templateUrl: './cartoes.component.html',
   styleUrl: './cartoes.component.scss'
 })
@@ -33,6 +35,12 @@ export class CartoesComponent {
       this.saudacao = 'Boa noite';
     }
     this.saudacao += ', ' + this.nome + '!';
+  }
+
+  showDropdown = false; // Controla a visibilidade do dropdown
+  
+  toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
   }
 
   logout() {
