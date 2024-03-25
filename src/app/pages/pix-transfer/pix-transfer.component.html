@@ -1,0 +1,44 @@
+<app-header>
+    <section welcome class="saldo-home col-md-6 my-auto order-2 order-md-1">
+      <div *ngIf="saldo != null" class="text-white border border-black mx-auto px-5 p-1 rounded-pill bg-black bg-opacity-25 mt-4">
+        <span class="me-2 text-black">Saldo</span>
+        <span>R$ {{ saldo | number:'1.2-2' }}</span> <!-- Formata o saldo como moeda -->
+      </div>
+    </section>
+    <section welcome class="order-1 mt-2">
+      <div class="welcome-perfil">
+        <div class="relative cursor-img-logout" (click)="toggleDropdown()"><img class="img-perfil" src="../../../assets/foto-cartao.png" alt="Imagem de boas-vindas"></div>
+        <div class="absolute" *ngIf="showDropdown" aria-labelledby="dropdownMenuButton">
+          <a class="text-black dropdown-item pe-4 fw-bold" href="#" (click)="logout()">Logout</a>
+        </div>      
+        <div>
+          <h2 class="welcome-paragraph text-black fs-5 m-0">{{ saudacao }}</h2>
+        </div>
+      </div>
+    </section>
+</app-header>
+<form [formGroup]="pixTransferForm" (ngSubmit)="realizarTransferencia()">
+    <div>
+      <label for="chavePix">Chave PIX:</label>
+      <input formControlName="chavePix" id="chavePix" required>
+      <div *ngIf="pixTransferForm.get('chavePix')?.invalid && pixTransferForm.get('chavePix')?.touched">
+        Chave PIX é obrigatória.
+      </div>
+    </div>
+  
+    <div>
+      <label for="valor">Valor:</label>
+      <input formControlName="valor" id="valor" type="number" required>
+      <div *ngIf="pixTransferForm.get('valor')?.invalid && pixTransferForm.get('valor')?.touched">
+        Valor deve ser maior que zero.
+      </div>
+    </div>
+  
+    <div>
+      <label for="descricao">Descrição:</label>
+      <input formControlName="descricao" id="descricao">
+    </div>
+  
+    <button type="submit" [disabled]="pixTransferForm.invalid">Transferir</button>
+  </form>
+  

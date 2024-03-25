@@ -1,20 +1,24 @@
 <app-default>
-    <!-- added button to be projected -->
-    <section class="content" buttons>
-        <button class="btn btn-secondary btn-header">ENTRAR</button>
+    <section class="content d-none d-lg-flex" buttons>
+        <button class="btn btn-dark text-primary" (click)="redirectToLogin()">
+            <i class="bi bi-box-arrow-in-right me-1"></i>
+            ENTRAR
+        </button>
     </section>
-
-    <section container class="container">
-        <div class="text-container text-secondary">
-            <p>Bem-vindo ao nosso novo <span class="text-primary"> banco</span>, onde <span class="text-primary">seu futuro</span> financeiro é <span class="text-primary">nossa prioridade</span>.</p>
+    <section container class="d-flex p-4 p-lg-5">
+        <div class="col-12 col-md-10 col-lg-7 text-center text-lg-start mx-md-auto mx-sm-auto fs-4 fs-md-3 fs-lg-2 fw-light text-light">
+            <p>Bem-vindo ao nosso novo <span class="text-primary">banco</span>, onde <span class="text-primary">seu futuro</span> financeiro é <span class="text-primary">nossa prioridade</span>.</p>
             <p>Estamos aqui para <span class="text-primary">oferecer</span> soluções inovadoras e serviços de excelência para <span class="text-primary">atender</span> às suas necessidades.</p>
-            <button class="btn btn-outline-primary btn-mobile btn-large">ENTRAR</button>
-            <button class="btn btn-primary btn-large">Abra a sua ConcasPay</button>
+            <div class="d-flex flex-column mx-auto col-10 col-sm-6 col-md-4 col-lg-5 gap-3">
+                <button class="d-block d-sm-none d-md-none btn btn-outline-primary btn-block" (click)="redirectToLogin()">
+                    <i class="bi bi-box-arrow-in-right me-1"></i>
+                    ENTRAR
+                </button>
+                <button class="btn btn-primary btn-block" (click)="redirectToRegister()">Abra a sua Concas<span class="text-light">Pay</span></button>
+            </div>
         </div>
-        <div class="image-container">
-            <img src="../../../assets/home-images/home-preview-app.png" alt="">
+        <div class="d-none d-lg-block col-lg-5">
+            <img class="img-fluid" src="../../../assets/home-images/home-preview-app.png" alt="">
         </div>
     </section>
 </app-default>
-
-

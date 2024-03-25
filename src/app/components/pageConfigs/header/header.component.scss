@@ -1,32 +1,3 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #daa520; /* Dourado */
-    padding: .875rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-text {
-    font-size: 2em; /* Tamanho do texto */
-    font-weight: bold; /* Negrito */
-    color: black;
-}
-
-.destaquePay {
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        padding: 1.5rem;
-    }
-
-    .logo {
-        margin: auto;
-    }
+.cursor-pointer-all {
+    cursor: pointer;
 }

@@ -1,0 +1,45 @@
+<app-header>
+    <section welcome class="saldo-home col-md-6 my-auto order-2 order-md-1">
+      <div *ngIf="saldo != null" class="text-white border border-black mx-auto px-5 p-1 rounded-pill bg-black bg-opacity-25 mt-4">
+        <span class="me-2 text-black">Saldo</span>
+        <span>R$ {{ saldo | number:'1.2-2' }}</span> <!-- Formata o saldo como moeda -->
+      </div>
+    </section>
+    <section welcome class="order-1 mt-2">
+      <div class="welcome-perfil">
+        <div class="relative cursor-img-logout" (click)="toggleDropdown()"><img class="img-perfil" src="../../../assets/foto-cartao.png" alt="Imagem de boas-vindas"></div>
+        <div class="absolute" *ngIf="showDropdown" aria-labelledby="dropdownMenuButton">
+          <a class="text-black dropdown-item pe-4 fw-bold" href="#" (click)="logout()">Logout</a>
+        </div>      
+        <div>
+          <h2 class="welcome-paragraph text-black fs-5 m-0">{{ saudacao }}</h2>
+        </div>
+      </div>
+    </section>
+</app-header>
+<section class="container row row-cols-2 my-5 mx-auto row-cols-md-4">
+  <div class="text-center">
+    <a [routerLink]="['/login']"><img src="../../../assets/button-images/pix.svg" alt=""></a>
+  </div>
+  <div class="text-center">
+    <a [routerLink]="['/login']"><img src="../../../assets/button-images/pay.svg" alt=""></a>
+  </div>
+  <div class="text-center">
+    <a [routerLink]="['/login']"><img src="../../../assets/button-images/dep.svg" alt=""></a>
+  </div>
+  <div class="text-center">
+    <a [routerLink]="['/login']"><img src="../../../assets/button-images/transf.svg" alt=""></a>
+  </div>
+</section>
+<app-body>
+  <section container>
+    <app-bank-statements-list>
+        
+    </app-bank-statements-list>
+  </section>
+</app-body>
+<section class="container mx-auto mt-5">
+  <div class="text-center">
+    <a [routerLink]="['/login']"><img src="../../../assets/button-images/verTodas.svg" alt=""></a>
+  </div>
+</section>
