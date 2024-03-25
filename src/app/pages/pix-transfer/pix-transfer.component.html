@@ -17,29 +17,28 @@
       </div>
     </section>
 </app-header>
-<section class="container row row-cols-2 my-5 mx-auto row-cols-md-4">
-  <div class="text-center">
-    <a [routerLink]="['/login']"><img src="../../../assets/button-images/pix.svg" alt=""></a>
-  </div>
-  <div class="text-center">
-    <a [routerLink]="['/login']"><img src="../../../assets/button-images/pay.svg" alt=""></a>
-  </div>
-  <div class="text-center">
-    <a [routerLink]="['/login']"><img src="../../../assets/button-images/dep.svg" alt=""></a>
-  </div>
-  <div class="text-center">
-    <a [routerLink]="['/login']"><img src="../../../assets/button-images/transf.svg" alt=""></a>
-  </div>
-</section>
-<app-body>
-  <section container>
-    <app-bank-statements-list>
-        
-    </app-bank-statements-list>
-  </section>
-</app-body>
-<section class="container mx-auto mt-5">
-  <div class="text-center">
-    <a [routerLink]="['/login']"><img src="../../../assets/button-images/verTodas.svg" alt=""></a>
-  </div>
-</section>
+<form [formGroup]="pixTransferForm" (ngSubmit)="realizarTransferencia()">
+    <div>
+      <label for="chavePix">Chave PIX:</label>
+      <input formControlName="chavePix" id="chavePix" required>
+      <div *ngIf="pixTransferForm.get('chavePix')?.invalid && pixTransferForm.get('chavePix')?.touched">
+        Chave PIX é obrigatória.
+      </div>
+    </div>
+  
+    <div>
+      <label for="valor">Valor:</label>
+      <input formControlName="valor" id="valor" type="number" required>
+      <div *ngIf="pixTransferForm.get('valor')?.invalid && pixTransferForm.get('valor')?.touched">
+        Valor deve ser maior que zero.
+      </div>
+    </div>
+  
+    <div>
+      <label for="descricao">Descrição:</label>
+      <input formControlName="descricao" id="descricao">
+    </div>
+  
+    <button type="submit" [disabled]="pixTransferForm.invalid">Transferir</button>
+  </form>
+  

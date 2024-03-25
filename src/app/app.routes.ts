@@ -7,6 +7,7 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
 import { CartoesComponent } from './pages/cartoes/cartoes.component';
 import { LoggedHomeComponent } from './pages/logged-home/logged-home.component';
 import { BankStatementsComponent } from './pages/bank-statements/bank-statements.component';
+import { PixTransferComponent } from './pages/pix-transfer/pix-transfer.component';
 
 export const routes: Routes = [
     {path: "", component: HomeComponent,},
@@ -16,4 +17,5 @@ export const routes: Routes = [
     {path: "cards", component: CartoesComponent, canActivate: [authGuard],},
     {path: "home", component: LoggedHomeComponent, canActivate: [authGuard],},
     {path: "statements", component: BankStatementsComponent, canActivate: [authGuard],},
+    {path: "pix", component: PixTransferComponent, canActivate: [authGuard],},
 ];
